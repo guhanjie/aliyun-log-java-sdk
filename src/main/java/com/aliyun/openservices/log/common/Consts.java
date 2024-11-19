@@ -137,6 +137,7 @@ public class Consts {
     public static final String CONST_OFFSET = "offset";
     public static final String CONST_REVERSE = "reverse";
     public static final String CONST_POWER_SQL = "powerSql";
+    public static final String CONST_FULL_COMPLETE_SQL = "full_complete_sql";
     public static final String CONST_FORWARD = "forward";
     public static final String CONST_SHARD = "shard";
     public static final String CONST_SESSION = "session";

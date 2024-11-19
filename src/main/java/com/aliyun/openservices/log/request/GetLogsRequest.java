@@ -327,6 +327,16 @@ public class GetLogsRequest extends Request {
         this.powerSql = powerSql;
     }
 
+	/**
+	 *set request fullCompleteSql
+	 *
+	 * @param fullCompleteSql
+	 *
+	 */
+	public void SetFullCompleteSql(boolean fullCompleteSql) {
+		SetParam(Consts.CONST_FULL_COMPLETE_SQL,String.valueOf(fullCompleteSql));
+	}
+
     public void SetShard(int shard) {
         this.shard = shard;
     }

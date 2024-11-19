@@ -893,12 +893,14 @@ public class Client implements LogService {
 		GetLogsRequest request = new GetLogsRequest(project, logStore, from, to, topic, query);
 		return GetLogs(request);
 	}
+
 	public GetLogsResponse GetLogs(String project, String logStore, int from,
 								   int to, String topic, String query, long line, long offset,
 								   boolean reverse) throws LogException
 	{
 		return GetLogs(project,logStore,from,to,topic,query,line,offset,reverse,false);
 	}
+
 	public GetLogsResponse GetLogs(String project, String logStore, int from,
 			int to, String topic, String query, long line, long offset,
 			boolean reverse, boolean powerSql) throws LogException {
@@ -911,6 +913,7 @@ public class Client implements LogService {
 				to, topic, query, offset, line, reverse,powerSql);
 		return GetLogs(request);
 	}
+
 	public GetLogsResponse 	GetLogs(String project, String logStore, int from,
 									  int to, String topic, String query, long line, long offset,
 									  boolean reverse,

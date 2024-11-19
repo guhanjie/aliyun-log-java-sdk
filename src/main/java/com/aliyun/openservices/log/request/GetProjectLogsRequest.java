@@ -40,6 +40,16 @@ public class GetProjectLogsRequest extends Request {
     }
 
     /**
+     *set request fullCompleteSql
+     *
+     * @param fullCompleteSql
+     *
+     */
+    public void SetFullCompleteSql(boolean fullCompleteSql) {
+        SetParam(Consts.CONST_FULL_COMPLETE_SQL,String.valueOf(fullCompleteSql));
+    }
+
+    /**
      * Get Query
      *
      * @return query
